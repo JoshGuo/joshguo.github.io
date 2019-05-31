@@ -28,7 +28,7 @@ body {
     text-align: center;
     padding: 4px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
 }
 .navbar a:hover, a:active{
 	background-color: #4fcfe8;
