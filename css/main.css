@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+body {
+	font-family: 'Comfortaa', cursive;
+	margin: 0px;
+}
 .navbar {
 	width: 100%;
 	height: 30px;
 	background-color: #e5b7f7;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Comfortaa', cursive, bold;
 	font-size: 20px;
 }
 .navbar ul {
@@ -13,4 +17,19 @@
 }
 .navbar li {
 	float: left;
+	width: 100px;
+}
+.navbar a{
+	display: block;
+}
+.navbar a:link, a:visited{
+	font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar a:hover, a:active{
+	background-color: #4fcfe8;
 }
