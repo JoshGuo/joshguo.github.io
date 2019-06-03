@@ -6,7 +6,7 @@ body {
 .navbar {
 	width: 100%;
 	height: 30px;
-	background-color: #e5b7f7;
+	background-color: #ADDCF3;
 	font-family: 'Comfortaa', cursive, bold;
 	font-size: 20px;
 }
@@ -32,5 +32,5 @@ body {
 	text-transform: none;
 }
 .navbar a:hover, a:active{
-	background-color: #4fcfe8;
+	background-color: #66C6F5;
 }
