@@ -18,17 +18,18 @@ body {
 .navbar li {
 	float: left;
 	width: 100px;
+	text-align: center;
 }
 .navbar a{
 	display: block;
 }
 .navbar a:link, a:visited{
 	font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: none;
+	color: black;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: none;
 }
 .navbar a:hover, a:active{
 	background-color: #4fcfe8;
