@@ -17,8 +17,9 @@ body {
 }
 .navbar li {
 	float: left;
-	width: 100px;
+	width: 150px;
 	text-align: center;
+	padding 4px;
 }
 .navbar a{
 	display: block;
