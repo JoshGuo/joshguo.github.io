@@ -34,3 +34,15 @@ body {
 .navbar a:hover, a:active{
 	background-color: #66C6F5;
 }
+.avatar img{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
+.body-text{
+	border: solid 2px #ADDCF3;
+	border-radius: 5px;
+}
+.body-text h1,h2,h3,h4,h5,h6,p{
+	text-align: center;
+}
