@@ -39,11 +39,16 @@ body {
 	height: 300px;
 	width: 300px;
 }
+.body-wrapper{
+	width: 100%;
+	text-align: center;
+}
 .body-text{
 	border: solid 2px #ADDCF3;
 	border-radius: 5px;
-	width: 70%;
-}
-.body-text h1,h2,h3,h4,h5,h6,p{
-	text-align: center;
+	width: 85%;
+	display: inline-block;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 25px;
 }
