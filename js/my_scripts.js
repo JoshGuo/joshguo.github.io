@@ -1,6 +1,16 @@
 $(document).ready(function(){
-	$("#projects").click(function(){
-		alert("hi");
+	//Shows and Hides project dropdown menu
+	$("#projects-content").css("display", "none");
+	$("#projects").hover(function(){
 		$("#projects-content").css("display","block");
+		$("#projects-content").hover(function(){
+			$("#projects-content").css("display","block");
+		},
+		function(){
+			$("#projects-content").css("display", "none");
+		});
+	},
+	function(){
+		$("#projects-content").css("display", "none");
 	});
 });
