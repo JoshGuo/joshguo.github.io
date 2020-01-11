@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/joshguo.github.io/static/css/main.d1b05096.chunk.css",
+    "main.js": "/joshguo.github.io/static/js/main.2e98fa5a.chunk.js",
+    "main.js.map": "/joshguo.github.io/static/js/main.2e98fa5a.chunk.js.map",
+    "runtime-main.js": "/joshguo.github.io/static/js/runtime-main.a33670b8.js",
+    "runtime-main.js.map": "/joshguo.github.io/static/js/runtime-main.a33670b8.js.map",
+    "static/js/2.d9b05828.chunk.js": "/joshguo.github.io/static/js/2.d9b05828.chunk.js",
+    "static/js/2.d9b05828.chunk.js.map": "/joshguo.github.io/static/js/2.d9b05828.chunk.js.map",
+    "index.html": "/joshguo.github.io/index.html",
+    "precache-manifest.c5efd56568b40a0218a98af3ff4728db.js": "/joshguo.github.io/precache-manifest.c5efd56568b40a0218a98af3ff4728db.js",
+    "service-worker.js": "/joshguo.github.io/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/joshguo.github.io/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.d9b05828.chunk.js.LICENSE": "/joshguo.github.io/static/js/2.d9b05828.chunk.js.LICENSE",
+    "static/media/logo.svg": "/joshguo.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a33670b8.js",
+    "static/js/2.d9b05828.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.2e98fa5a.chunk.js"
+  ]
+}
