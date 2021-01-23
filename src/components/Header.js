@@ -22,8 +22,8 @@ function Header(props) {
 
     return(
         <div style={styles.main}>
-            <ScrollAnimation animateIn='fadeInLeft' duration={1} animateOnce={true}>{props.name}</ScrollAnimation>
-            <ScrollAnimation style={styles.line} animateIn='fadeInLeft' animateOnce={true}/>
+            <ScrollAnimation animateIn='fadeInLeft' duration={2} animateOnce={true}>{props.name}</ScrollAnimation>
+            <ScrollAnimation style={styles.line} animateIn='fadeInLeft' delay={1500} animateOnce={true}/>
         </div>
     );
 }

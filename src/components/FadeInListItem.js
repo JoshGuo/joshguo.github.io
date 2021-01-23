@@ -6,13 +6,13 @@ function FadeInListItem(props) {
     let styles = {
         textWrapper: {
             whiteSpace: 'pre-wrap',
-            margin: isMobile() ? '50px 0' : '100px 0'
+            margin: isMobile() ? '80px 0' : '100px 0'
         }
     }
     
     return(
         <div style={styles.textWrapper}>
-            <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true} delay={isMobile() ? 100 : 300}>
+            <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true} delay={isMobile() ? 200 : 300}>
                 {props.attribute}
             </ScrollAnimation>
         </div>

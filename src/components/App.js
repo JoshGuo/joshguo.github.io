@@ -6,6 +6,8 @@ import Header from './Header';
 import FadeInList from './FadeInList';
 import ProjectList from './ProjectList'
 
+import ResumeLogo from '../imgs/resume_icon.png';
+
 var json = require('../data.json');
 
 function App() {
