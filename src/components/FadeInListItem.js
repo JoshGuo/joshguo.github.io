@@ -12,7 +12,7 @@ function FadeInListItem(props) {
     
     return(
         <div style={styles.textWrapper}>
-            <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true} delay={isMobile() ? 200 : 300}>
+            <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true} delay={isMobile() ? 200 : 200}>
                 {props.attribute}
             </ScrollAnimation>
         </div>

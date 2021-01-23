@@ -6,17 +6,21 @@ import Header from './Header';
 import FadeInList from './FadeInList';
 import ProjectList from './ProjectList'
 
-import ResumeLogo from '../imgs/resume_icon.png';
+//import ResumeLogo from '../imgs/resume_icon.png';
 
 var json = require('../data.json');
+var color1 = json.data.color1;
+var color2 = json.data.color2;
 
 function App() {
     let styles = {
         headerWrapper: { 
             paddingLeft: isMobile() ? '5%' : '20%',
             paddingTop: window.screen.height/4 + "px",
-            paddingBottom: window.screen.height/4 + "px",
-            backgroundColor:  '#f5ead7'
+            paddingRight: isMobile() ? '5%' : '20%',
+            //paddingBottom: window.screen.height/4 + "px",
+            backgroundColor:  color1,
+            color: color2,
         },
         arrow: {
             fontSize: isMobile() ? '40pt' : '80pt',
@@ -25,22 +29,25 @@ function App() {
         projectWrapper: {
             paddingLeft: isMobile() ? '5%' : '20%',
             paddingTop: window.screen.height/4 + "px",
-            backgroundColor: '#171616',
-            height: "1000px"
+            paddingRight: isMobile() ? '5%' : '20%',
+            paddingBottom: window.screen.height/4 + "px",
+            backgroundColor: color2,
+            color: color1
         }
     } 
 
     return (
         <div>
             <div style={styles.headerWrapper}>
-                <Header name={json.data.name} backgroundColor={'#f5ead7'} fontColor={'#000'} lineColor={'#000'}/>
+                <Header name={json.data.header1} backgroundColor={color1} fontColor={color2} lineColor={color2}/>
                 <ScrollAnimation style={styles.arrow} animateIn='fadeIn' delay={3000} animateOnce={true}>&#8595;</ScrollAnimation>
                 <FadeInList attributes={json.data.attributes} />
             </div>
 
             <div style={styles.projectWrapper}>
-                <Header name={"Projects (WIP)"} backgroundColor={'#171616'} fontColor={'#f5e5c9'} lineColor={'#f5e5c9'}/>
-                <ProjectList />
+                <Header name={json.data.header2} backgroundColor={color2} fontColor={color1} lineColor={color1}/>
+                <ScrollAnimation style={styles.arrow} animateIn='fadeIn' delay={2000} animateOnce={true}>&#8595;</ScrollAnimation>
+                <ProjectList projects={json.data.projects} color1={color1} color2={color2}/>
             </div>
             
         </div>
@@ -49,3 +56,7 @@ function App() {
 }
 
 export default App;
+
+/**
+ * Writted by Joshua Guo (http://joshguo.github.io)
+ */
