@@ -12,10 +12,11 @@ var color2 = json.colors.secondary;
 
 function App() {
     return(
-        <div>
+        <div style={{userSelect: 'none'}}>
             {json.sections.map((element, index) => (
                 <Section 
                     type={element.type} 
+                    key={index}
                     header={element.header} 
                     data={element.data} 
                     isFirst={index === 0} 
