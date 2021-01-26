@@ -8,3 +8,22 @@ export function isMobile() {
 
     return false;
 }
+
+/**
+ * WHEN TO ADD FUNCTIONALITY FOR MORE TYPES, IMPLEMENT IN SECTION.js
+ */
+export var SECTION_TYPES = {
+    LIST: "LIST",
+    LIST_FADE: "LIST_FADE",
+    BULLET: "BULLET",
+    BULLET_EXPANDABLE: "BULLET_EXPANDABLE",
+    BOX: "BOX",
+    BOX_FLIPPABLE: "BOX_FLIPPABLE",
+}
+
+export var LIST_ITEM_TYPES = {
+    DEFAULT: "DEFAULT",
+    TAB: "TAB",
+    LINK: "LINK",
+    TABLINK: "TABLINK"
+}

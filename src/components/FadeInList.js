@@ -1,5 +1,5 @@
 import React from 'react';
-import FadeInListItem from './FadeInListItem';
+import ListItem from './ListItem';
 import { isMobile } from '../Tools';
 
 function FadeInList(props) {
@@ -10,10 +10,12 @@ function FadeInList(props) {
         }
     }
 
+    console.log(props.data)
+
     return(
         <div style={style.main}>
-            {props.attributes.map((element, index) => (
-                <FadeInListItem attribute={element} key={index}/>
+            {props.data.map((element, index) => (
+                <ListItem item={element} isLast={index === props.data.length-1} key={index} fade={props.fade}/>
             ))}
         </div>
     );
