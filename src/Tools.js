@@ -18,6 +18,7 @@ export var SECTION_TYPES = {
     BULLET: "BULLET",
     BOX: "BOX",
     BOX_FLIPPABLE: "BOX_FLIPPABLE",
+    PICTURE: "PICTURE"
 }
 
 export var LIST_ITEM_TYPES = {

@@ -18,7 +18,7 @@ function BoxDisplay(props) {
         <div style={styles.main}>
             <div style={styles.row}>
                 {props.data.map((element, index) => (
-                    <Box contents={element} color1={props.color1} color2={props.color2} flip={props.flip} key={index}/>
+                    <Box content={element} flip={props.flip} key={index}/>
                 ))}
                 {!isMobile() && props.data.length % 2 === 1 && <Box dummy={true}/>}
             </div>

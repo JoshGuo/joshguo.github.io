@@ -6,6 +6,7 @@ import Header from './Header';
 import List from './List';
 import BoxDisplay from './BoxDisplay';
 import BulletList from './BulletList';
+import Picture from './Picture';
 
 function getSection(type, data) {
     switch(type) {
@@ -18,6 +19,8 @@ function getSection(type, data) {
         case SECTION_TYPES.BOX_FLIPPABLE: return <BoxDisplay data={data} flip={true}/>
         
         case SECTION_TYPES.BULLET: return <BulletList data={data}/>
+
+        case SECTION_TYPES.PICTURE: return <Picture data={data}/>
 
         default: return(<div>{"UNIMPLEMENTED TYPE: " + type + ". Please contact me at joshua.guo@stonybrook.edu to report this."}</div>)
     }

@@ -1,7 +1,7 @@
 {
     "colors": {
-        "primary" : "#f5e5c9",
-        "secondary" : "#171616"
+        "color1" : "#f5e5c9",
+        "color2" : "#171616"
     },
     "sections" : [
         {
@@ -47,9 +47,19 @@
             ]
         },
         {
-            "type" : "BOX_FLIPPABLE",
-            "header" : "Projects",
-            "data" : [
+            "type": "PICTURE",
+            "header": "About Me",
+            "data": [
+                {
+                    "img": "joshuaguo.png",
+                    "caption": "Welcome to my portfolio! My name is Josh and I am currently a junior at Stony Brook University as a member of the Honors College and the CS Honors program. I love problem solving and am eager to see where computer science & mathematics can take me in the future!"
+                }
+            ]
+        },
+        {
+            "type": "BOX_FLIPPABLE",
+            "header": "Projects",
+            "data": [
                 {
                     "name" : "ControlLED",
                     "description" : "During the Covid-19 quarantine, I created this webapp to allow my friends to communicate to me via LED lights in my room. Using Express, I created a REST API to read / write from a queue of LED messages in MongoDB accompanied by a simple UI for users to customize the lights and attach a message. Additionally, I had to code and wire an Arduino to be able to read from the queue and adjust the lights accordingly.",
@@ -61,7 +71,7 @@
                 },
                 {
                     "name": "Portfolio",
-                    "description": "The portfolio you're looking at right now! Working on this digital portfolio has helped me better understand principles of minimalistic and reactive web design. Additionally, all the data is filled in abstractly, so maintenance and updating of items (like this text here!) can all be done through basic modification of a JSON file. Super simple! Feel free to contact me if you are interested in borrowing this template :). By request, I am currently working on a portfolio generator for other users to more easily customize and adapt the format.",
+                    "description": "The portfolio you're looking at right now! Working on this digital portfolio has helped me better understand principles of minimalistic and reactive web design. Additionally, all the data is filled in abstractly, so maintenance and updating of items (like this text here!) can all be done through basic modification of a JSON file. Super simple! By request, I am currently working on a portfolio generator for other users to more easily customize and adapt the format.",
                     "subtext": ["ReactJS"]
                 },
                 {
@@ -80,7 +90,7 @@
                 },
                 {
                     "name" : "Save",
-                    "description" : "My final project for my Honors Object-Oriented Programming class meant to leverage the various OOP principles that I had learned over the semester. JavaFX nodes in the GUI reinforced polymorphism concepts and I had to create multiple objects with methods to keep track of users' spending history.",
+                    "description" : "This was my final project for my Honors Object-Oriented Programming class, meant to leverage the various OOP principles that I had learned over the semester. JavaFX nodes in the GUI helped to reinforce polymorphism concepts and I had to create multiple objects with methods to keep track of users' spending history.",
                     "subtext" : ["Java", "JavaFX"],
                     "demo" : false,
                     "github" : true,
@@ -89,7 +99,7 @@
             ]
         },
         {
-            "type" : "LIST_FADE",
+            "type" : "LIST",
             "header": "Contact",
             "data" : [
                 {
