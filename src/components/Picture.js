@@ -1,5 +1,6 @@
 import React from 'react';
 import { isMobile } from '../Tools';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Image(props) {
     let wrapper = {
@@ -65,12 +66,12 @@ function Picture(props) {
     }
 
     return(
-        <div style={styles.main}>
+        <ScrollAnimation animateIn="fadeIn" duration={2} style={styles.main}>
             <div style={styles.row}>
                 <Image img={props.data[0].img}/>
                 <Caption content={props.data[0].caption}/>
             </div>
-        </div>
+        </ScrollAnimation>
     )
 }
 

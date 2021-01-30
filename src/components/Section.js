@@ -8,15 +8,15 @@ import BoxDisplay from './BoxDisplay';
 import BulletList from './BulletList';
 import Picture from './Picture';
 
-function getSection(type, data) {
+function getSection(type, data, colors) {
     switch(type) {
         case SECTION_TYPES.LIST: return <List data={data} fade={false}/>
 
         case SECTION_TYPES.LIST_FADE: return <List data={data} fade={true}/>
 
-        case SECTION_TYPES.BOX: return <BoxDisplay data={data} flip={false}/>
+        case SECTION_TYPES.BOX: return <BoxDisplay data={data} flip={false} colors={colors}/>
 
-        case SECTION_TYPES.BOX_FLIPPABLE: return <BoxDisplay data={data} flip={true}/>
+        case SECTION_TYPES.BOX_FLIPPABLE: return <BoxDisplay data={data} flip={true} colors={colors}/>
         
         case SECTION_TYPES.BULLET: return <BulletList data={data}/>
 
@@ -32,7 +32,7 @@ function Section(props) {
             paddingLeft: isMobile() ? '5%' : '20%',
             paddingTop: props.isFirst ? window.screen.height/3 + "px" : window.screen.height/8 + 'px',
             paddingRight: isMobile() ? '5%' : '20%',
-            paddingBottom: window.screen.height/8 + "px",
+            paddingBottom: window.screen.height/4 + "px",
             backgroundColor:  props.colors[0],
             color: props.colors[1],
         },
@@ -49,7 +49,7 @@ function Section(props) {
             {props.isFirst && <ScrollAnimation style={styles.arrow} animateIn='fadeIn' delay={3000} animateOnce={true}>&#8595;</ScrollAnimation>}
             {!props.isFirst && <div style={{marginBottom: window.screen.height/25 + "px"}}/>}
 
-            {getSection(props.type, props.data)}
+            {getSection(props.type, props.data, props.colors)}
         </div>
     )
     

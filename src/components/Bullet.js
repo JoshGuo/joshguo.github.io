@@ -7,13 +7,14 @@ function SubBullet(props) {
     let styles={
         wrapper: {
             margin: margin,
-            fontSize: '14pt'
+            fontSize: '13pt',
+            whiteSpace: 'pre-wrap'
         }
     }
 
     return(
         <div style={styles.wrapper}>
-            <div style={{display: 'inline-block', maxWidth: '5%', verticalAlign: 'top'}}>&mdash;</div> 
+            <div style={{display: 'inline-block', maxWidth: '5%', verticalAlign: 'top'}}>&mdash; </div> 
             <div style={{display: 'inline-block', maxWidth: '95%'}}>{props.content}</div>
         </div>
     )

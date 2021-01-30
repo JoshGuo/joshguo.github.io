@@ -6,7 +6,8 @@ import Box from './Box';
 function BoxDisplay(props) {
     let styles = {
         main: {
-            width: '100%'
+            width: '100%',
+            color: props.colors[0]
         },
         row: {
             display: 'flex',
@@ -18,7 +19,7 @@ function BoxDisplay(props) {
         <div style={styles.main}>
             <div style={styles.row}>
                 {props.data.map((element, index) => (
-                    <Box content={element} flip={props.flip} key={index}/>
+                    <Box content={element} flip={props.flip} colors={props.colors} key={index}/>
                 ))}
                 {!isMobile() && props.data.length % 2 === 1 && <Box dummy={true}/>}
             </div>

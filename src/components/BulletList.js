@@ -5,7 +5,8 @@ import Bullet from './Bullet';
 function BulletList(props) {
     let styles = {
         main: {
-            width: '100%'
+            width: '100%',
+            fontSize: '8pt'
         },
         items: {
             display: 'flex',

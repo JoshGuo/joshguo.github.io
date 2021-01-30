@@ -19,12 +19,11 @@ var globalStyles = {
 function ClickedBox(props) {
     let clickedCard = {
         display: 'inline-block',
-        backgroundColor: props.color1,
-        color: props.color2,
+        backgroundColor: props.colors[1],
         borderStyle: 'solid',
         borderRadius: '10px',
         borderWidth: '5px',
-        borderColor: props.color1,
+        borderColor: props.colors[1],
         flex: 1,
         minWidth: isMobile() ? '85%' : '45%',
         height: height,
@@ -67,9 +66,18 @@ function Box(props) {
     const [clicked, handleClick] = useState(false);
     const [hovered, handleChangeHover] = useState(false);
 
+    //Add in filler box for spacing purposes
+    if(props.dummy) {
+        return <DummyBox/>
+    }
+
+    let fontSize = isMobile() ? (props.content.name.length > 12 ? '20pt' : '30pt')  : (props.content.name.length > 15 ? '30pt' : '40pt');
+
     let styles = {
         card: {
             display: 'inline-block',
+            backgroundColor: props.colors[1],
+            borderColor: props.colors[1],
             borderStyle: 'solid',
             borderRadius: '10px',
             borderWidth: '5px',
@@ -84,7 +92,7 @@ function Box(props) {
             textAlign: 'center',
             verticalAlign: 'middle',
             lineHeight: height,
-            fontSize: '40pt',
+            fontSize: fontSize,
             margin: '0 0 0 20px'
         }, 
         img: {
@@ -96,14 +104,11 @@ function Box(props) {
         }
     }
 
-    //Add in filler box for spacing purposes
-    if(props.dummy) {
-        return <DummyBox color1={props.color1} color2={props.color2}/>
-    }
+    
 
     //Show back description of card if clicked
     if(clicked) {
-        return <ClickedBox color1={props.color1} color2={props.color2} content={props.content} handleClick={handleClick}/>
+        return <ClickedBox colors={props.colors} content={props.content} handleClick={handleClick}/>
     }
 
     let img;
