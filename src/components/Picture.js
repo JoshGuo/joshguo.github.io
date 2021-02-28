@@ -5,15 +5,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Image(props) {
     let wrapper = {
         flex: 1,
-        maxWidth: isMobile() ? '100%' : '45%',
-        minWidth: isMobile() ? '70%' : '45%',
-        textAlign: 'center'
+        maxWidth: isMobile() ? '100%' : '40%',
+        textAlign: 'center',
+        display: 'inline-block',
+        verticalAlign: 'middle',
     }
 
     let imgStyle = {
-        display: 'inline-block',
         minWidth: '70%',
-        maxWidth: '70%',
+        maxWidth: '80%',
         borderRadius: '50%'
     }
 
@@ -31,16 +31,14 @@ function Image(props) {
 
 function Caption(props) {
     let caption = {
-        flex: 1,
-        minWidth: isMobile() ? '100%' : '45%',
-        marginTop: isMobile() ? '10px' : '',
-        display: 'flex',
+        maxWidth: isMobile() ? '100%' : '60%',
         justifyContent: 'center',
         alignItems: 'center',
+        display: 'inline-block',
+        verticalAlign: 'middle',
     }
 
     let text = {
-        display: 'inline-block',
         fontSize: isMobile() ? '13pt' : '15pt',
         whiteSpace: 'pre-wrap'
     }
@@ -57,21 +55,15 @@ function Caption(props) {
 function Picture(props) {
     let styles = {
         main: {
-            width: isMobile() ? '90%' : '100%',
+            width: isMobile() ? '95%' : '100%',
             margin: '0 auto'
-        },
-        row: {
-            display: 'flex',
-            flexWrap: 'wrap'
         }
     }
 
     return(
         <ScrollAnimation animateIn="fadeIn" duration={2} style={styles.main}>
-            <div style={styles.row}>
                 <Image img={props.data[0].img}/>
                 <Caption content={props.data[0].caption}/>
-            </div>
         </ScrollAnimation>
     )
 }
