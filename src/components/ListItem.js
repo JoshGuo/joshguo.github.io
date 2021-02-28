@@ -39,7 +39,8 @@ function ListItem(props) {
     let styles = {
         textWrapper: {
             whiteSpace: 'pre-wrap',
-            margin: margin(props.isLast)
+            margin: margin(props.isLast),
+            userSelect: 'text'
         }
     }
     
