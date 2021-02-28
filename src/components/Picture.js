@@ -36,12 +36,13 @@ function Caption(props) {
         marginTop: isMobile() ? '10px' : '',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     }
 
     let text = {
         display: 'inline-block',
         fontSize: isMobile() ? '13pt' : '15pt',
+        whiteSpace: 'pre-wrap'
     }
 
     return(
@@ -56,7 +57,7 @@ function Caption(props) {
 function Picture(props) {
     let styles = {
         main: {
-            width: '90%',
+            width: isMobile() ? '90%' : '100%',
             margin: '0 auto'
         },
         row: {

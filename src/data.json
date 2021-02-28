@@ -26,15 +26,15 @@
                 },
                 {
                     "type": "DEFAULT",
+                    "content": "Aspiring Software Engineer"
+                },
+                {
+                    "type": "DEFAULT",
                     "content": "Avid Learner"
                 },
                 {
                     "type": "DEFAULT",
                     "content": "Novice Mechanical Keyboard Enthusiast"
-                },
-                {
-                    "type": "DEFAULT",
-                    "content": "Aspiring Software Engineer"
                 },
                 {
                     "type": "DEFAULT",
@@ -52,7 +52,7 @@
             "data": [
                 {
                     "img": "joshuaguo.png",
-                    "caption": "Welcome to my portfolio! My name is Josh and I am currently a junior at Stony Brook University as a member of the Honors College and the CS Honors program. I love problem solving and am eager to see where computer science & mathematics can take me in the future!"
+                    "caption": "Hi, I'm Josh! I'm currently a junior double majoring in Computer Science and Applied Math + Statistics at Stony Brook University. I'm also a part of the Honors College and the CS honors program. \n\nAs an aspiring software engineer, my goals at the moment are to get as much industry exposure as I can get my hands on and I am open to any software relate positions. Generally speaking though, I love the problem solving nature that this field offers and am eager to see where computer science and mathematics will take me in the future! \n\nIn my free time, I love dabbling in as many hobbies as I can find the time for. Recently, I've been learning about mechanical keyboards, cardistry, and playing the piano!"
                 }
             ]
         },
@@ -115,6 +115,11 @@
                     "type": "LINK",
                     "content": "GitHub",
                     "link": "https://github.com/JoshGuo"
+                },
+                {
+                    "type": "LINK",
+                    "content": "Resume",
+                    "link": "Joshua Guo.pdf"
                 }
             ]
         }
